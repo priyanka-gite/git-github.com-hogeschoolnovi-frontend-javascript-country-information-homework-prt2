@@ -28,7 +28,7 @@ async function fetchCountryInformation() {
         // console.log(countries);
         const listOFCountries = document.getElementById("listOfCountries")
                 countries
-            .map((country) =>
+            .map(({ name, flag, population, currencies, capital, region }) =>
                 listOFCountries.innerHTML = `<li class="lister">
                 <div class="land-flag">
                    <h3 class="country-names">${country.name}</h3>
