@@ -15,8 +15,8 @@ const localCurrency = (currencies) => {
 }
 
 async function fetchCountryInformation() {
-    const BASE = "https://restcountries.com/";
-    const EndPoint = "v2/name/";
+    const base = "https://restcountries.com/";
+    const endPoint = "v2/name/";
     const searchBar = document.getElementById("search-bar");
     const searchBarValue = searchBar.value;
     searchBar.value = '';
